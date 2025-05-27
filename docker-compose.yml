@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - prueba-de-pagina-web-phpmyadmin-xvipd6
+
+networks:
+  prueba-de-pagina-web-phpmyadmin-xvipd6:
+    name: prueba-de-pagina-web-phpmyadmin-xvipd6
+    external: true
